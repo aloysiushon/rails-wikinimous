@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <nav>
+      <div><%=  link_to "Rails Wikinimouser", root_path %></div>
+      <div><%= link_to "New Article", articles_new_path %></div>
+    </nav>
     <%= yield %>
   </body>
 </html>

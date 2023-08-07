@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   # root "articles#index"
   # Read all
   root to: "articles#index"
+  # Create
+  get "articles/new", to: "articles#new"
+  post "articles", to: "articles#create"
+  # Read one
   get "article/:id", to: "articles#show", as: "article"
 end
