@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   post "articles", to: "articles#create"
   # Read one
   get "article/:id", to: "articles#show", as: "article"
+  # Update
+  get "article/:id/edit", to: "articles#edit", as: "edit"
+  patch "article/:id", to: "articles#update"
 end
