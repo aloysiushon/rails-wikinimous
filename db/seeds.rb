@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-10.times do
+15.times do
   new_article = Article.new(
     title: Faker::Games::Pokemon.name,
     content: Faker::Quote.matz

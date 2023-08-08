@@ -2,5 +2,9 @@
 <h2>
 <div><%= @article.title %></div>
 <div><%= link_to "Edit", edit_path %></div>
+<div><%= link_to "Delete",
+  article_path(@article),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+ %></div>
 </h2>
 <p><%= @article.content %></p>

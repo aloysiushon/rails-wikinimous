@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   # Update
   get "article/:id/edit", to: "articles#edit", as: "edit"
   patch "article/:id", to: "articles#update"
+  # Delete
+  delete "article/:id", to: "articles#destroy"
 end
